@@ -16,12 +16,33 @@
         <dependency>
             <groupId>com.sample</groupId>
             <artifactId>war1</artifactId>
+            <version>${project.version}</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>com.sample</groupId>
             <artifactId>war2</artifactId>
+            <version>${project.version}</version>
             <type>war</type>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>5.0.1.Final</version>
+                <configuration>
+                    <version>33.0.2.Final</version>
+                    <server-config>standalone-full.xml</server-config>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.openliberty.tools</groupId>
+                <artifactId>liberty-maven-plugin</artifactId>
+                <version>3.11.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
