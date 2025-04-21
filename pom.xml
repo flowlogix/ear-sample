@@ -23,7 +23,7 @@
     <properties>
         <!-- Override target java release -->
         <!-- <maven.compiler.release>23</maven.compiler.release> -->
-        <flowlogix.depchain.version>55</flowlogix.depchain.version>
+        <flowlogix.depchain.version>56</flowlogix.depchain.version>
         <arquillian.payara.version>3.1</arquillian.payara.version>
         <checkstyle.supressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.supressionsLocation>
         <checkstyle.headerLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/apache-header.txt</checkstyle.headerLocation>
