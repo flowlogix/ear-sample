@@ -17,7 +17,7 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>payara-pom</artifactId>
-        <version>58</version>
+        <version>60</version>
     </parent>
 
     <properties>
@@ -25,7 +25,7 @@
         <!-- <maven.compiler.release>23</maven.compiler.release> -->
         <flowlogix.depchain.version>69</flowlogix.depchain.version>
         <arquillian.payara.version>3.1</arquillian.payara.version>
-        <checkstyle.supressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.supressionsLocation>
+        <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <checkstyle.headerLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/apache-header.txt</checkstyle.headerLocation>
         <!-- Turn off maven build cache -->
         <maven.build.cache.enabled>false</maven.build.cache.enabled>
