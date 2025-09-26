@@ -39,6 +39,6 @@ class StarterIT {
 
     @Deployment
     static WebArchive deploy() {
-        return ShrinkWrapManipulator.createDeployment(WebArchive.class);
+        return ShrinkWrapManipulator.packageSlf4j(ShrinkWrapManipulator.createDeployment(WebArchive.class));
     }
 }
