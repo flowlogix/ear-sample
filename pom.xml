@@ -75,7 +75,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
                     <packagingExcludes>
-                        %regex[WEB-INF/lib/(?!omnifaces|flowlogix-jee).*.jar]
+                        %regex[WEB-INF/lib/(?!omnifaces|flowlogix-jee|commons-lang3).*.jar]
                     </packagingExcludes>
                 </configuration>
             </plugin>
