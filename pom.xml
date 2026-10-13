@@ -17,13 +17,13 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>payara-pom</artifactId>
-        <version>145</version>
+        <version>146</version>
     </parent>
 
     <properties>
         <!-- Override target java release -->
         <!-- <maven.compiler.release>23</maven.compiler.release> -->
-        <flowlogix.depchain.version>132</flowlogix.depchain.version>
+        <flowlogix.depchain.version>133</flowlogix.depchain.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <checkstyle.headerLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/apache-header.txt</checkstyle.headerLocation>
         <!-- Turn off maven build cache -->
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.flowlogix</groupId>
             <artifactId>flowlogix-jee</artifactId>
-            <version>11.7</version>
+            <version>11.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.omnifaces</groupId>
@@ -75,7 +75,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
                     <packagingExcludes>
-                        %regex[WEB-INF/lib/(?!omnifaces|flowlogix-jee).*.jar]
+                        %regex[WEB-INF/lib/(?!omnifaces|flowlogix-jee|commons-lang3).*.jar]
                     </packagingExcludes>
                 </configuration>
             </plugin>
