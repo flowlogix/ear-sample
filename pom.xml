@@ -21,9 +21,9 @@
     </parent>
 
     <properties>
-        <flowlogix.bom.version>56</flowlogix.bom.version>
         <!-- Override target java release -->
         <!-- <maven.compiler.release>23</maven.compiler.release> -->
+        <flowlogix.bom.version>56</flowlogix.bom.version>
         <flowlogix.depchain.version>135</flowlogix.depchain.version>
         <checkstyle.suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/suppressions.xml</checkstyle.suppressionsLocation>
         <checkstyle.headerLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/apache-header.txt</checkstyle.headerLocation>
